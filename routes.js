@@ -12,6 +12,10 @@ router.get('/', async(req,res) => {
 router.post('/products', async(req,res) => {
     const products = req.body;
 
+    for(let i = 0; i < products.length; i++) {
+
+        // do any thing here for products
+    }
     res.send({
         'status': true,
         'products': products,
